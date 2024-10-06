@@ -1,38 +1,97 @@
 .App {
+  color: white;
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.CalcContainer {
+  background-color: rgb(43, 42, 60);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 15px;
+  width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Display {
+  background-color: rgb(44, 43, 61);
+  color: white;
+  font-size: 48px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+
+
+.ButtonsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.ButtonKeys {
+  background-color: rgb(45, 46, 65);
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ButtonKeys:hover {
+  background-color: rgb(155, 103, 7);
+}
+
+.OperatorButton {
+  background-color: rgb(45, 46, 64);
+}
+
+.OperatorButton:hover {
+  background-color: rgb(155, 103, 7);
+}
+
+.ClearButton {
+  background-color: rgb(248, 143, 5);
+}
+
+.ClearButton:hover {
+  background-color: rgb(99, 66, 5);
+}
+
+.EqualsButton {
+  background-color: rgb(248, 143, 5);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.EqualsButton:hover {
+  background-color: rgb(99, 66, 5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SurnameContainer {
+  margin-top: 20px;
+}
+
+.SurnameContainer .OperatorButton {
+  background-color: rgb(45, 46, 66);
+}
+
+.SurnameContainer .OperatorButton {
+  background-color: rgb(248, 143, 5);
+}
+
+.SurnameContainer .OperatorButton:hover {
+  background-color: rgb(99, 66, 5);
 }
